@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explorador de países - REST Countries</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="contenedor">
+        <img src="tierra.png" alt="" width="15%">
+        <h1>Explorador de países</h1>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="Galeria.html">Galería</a>
+        <a href="#">Continentes</a>
+      </nav>
+    </header>
+    <h2>Mi país favorito</h2>
+    <div id="favorito"></div>
+
+    <hr>
+
+    <h2>Buscar y filtrar</h2>
+
+    <section>
+      <label>Nombre: <input type="text" id="busqueda" placeholder="Ej: España"></label>
+
+      <label>Región:
+        <select id="region">
+          <option value="">Todas</option>
+          <option value="Africa">África</option>
+          <option value="Americas">América</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceanía</option>
+          <option value="Antarctic">Antártida</option>
+        </select>
+      </label>
+
+      <label>Ordenar por:
+        <select id="orden">
+          <option value="nombre">Nombre (A-Z)</option>
+          <option value="poblacion-desc">Población (mayor a menor)</option>
+          <option value="poblacion-asc">Población (menor a mayor)</option>
+        </select>
+      </label>
+
+    </section>
+
+    <p id="contador"></p>
+
+    <table border="1" cellpadding="4">
+      <thead>
+        <tr>
+          <th>Bandera</th>
+          <th>País</th>
+          <th>Capital</th>
+          <th>Región</th>
+          <th>Población</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla"></tbody>
+    </table>
+
+    <hr>
+
+    <h2>Todos mis favoritos</h2>
+
+    <ul id="lista-favoritos"></ul>
+    
+  </body>
+</html>
